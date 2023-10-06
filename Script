@@ -1,0 +1,12 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Robojini/Tuturial_UI_Library/main/UI_Template_1"))()
+
+local Window = Library.CreateLib("PLS BUY ME | Txxicu Scripts", "RJTheme3")
+
+local Tab = Window:NewTab("Scripts")
+
+local Section = Tab:NewSection("Scripts")
+
+Section:NewButton("Teleport", "ButtonInfo", function()
+    print("Clicked")
+game:GetService('Players').LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(342.862762, 92.5100098, -3205.92993, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+end)
